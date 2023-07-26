@@ -1,12 +1,12 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "cli": {
-    "analytics": false
+    "analytics": "286fbc35-2536-4351-88fa-38eea08d7f4d"
   },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "landos": {
+    "landing": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -23,7 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/landos",
+            "outputPath": "dist/landing",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -75,10 +75,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "landos:build:production"
+              "browserTarget": "landing:build:production"
             },
             "development": {
-              "browserTarget": "landos:build:development"
+              "browserTarget": "landing:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -86,7 +86,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "landos:build"
+            "browserTarget": "landing:build"
           }
         },
         "test": {
@@ -110,5 +110,5 @@
       }
     }
   },
-  "defaultProject": "landos"
+  "defaultProject": "landing"
 }
