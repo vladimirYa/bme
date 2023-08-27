@@ -88,8 +88,8 @@ body {
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;
     letter-spacing: 1.6px;
+    line-height: 1.2;
 }
 
 h1 {
