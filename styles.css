@@ -267,7 +267,7 @@ h4 {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    margin-top: 60px;
+    margin: 60px 0;
 }
 
 .why__item {
@@ -399,6 +399,94 @@ h4 {
 
 .what__right .container__footer_item .description {
     padding: 20px;
+}
+
+.portfolio .portfolio__title {
+    margin-bottom: 60px;
+}
+
+.portfolio .portfolio__content_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.portfolio__content_wrapper .portfolio__content_left {
+    width: 40%;
+}
+.portfolio__content_wrapper .portfolio__content_right {
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+    transform: rotate(-30deg);
+}
+
+.portfolio__content_wrapper .portfolio__content_right .portfolio__content_card_wrapper {
+    position: relative;
+    width: 140px;
+    height: 125px;
+}
+.portfolio__content_wrapper .portfolio__content_right .portfolio__content_card_wrapper:nth-child(3) {
+    margin-left: 70px;
+}
+
+.portfolio__content_wrapper .portfolio__content_right .portfolio__content_card_wrapper .portfolio__content_card_img_card {
+    position: absolute;
+    top: 25px;
+    left: 55px;
+    transform: rotate(30deg);
+    z-index: 2;
+}
+.portfolio__content_wrapper .portfolio__content_right .portfolio__content_card_wrapper .portfolio__content_card_img_platform {
+    transform: rotate(30deg);
+}
+
+.portfolio__project_card {
+    background: linear-gradient(to bottom, #1FF1E9 0%, #06A1FC 100%);
+    border-radius: 30px;
+    padding: 20px 35px;
+    min-height: 230px;
+    width: 430px;
+}
+
+.portfolio__project_card .portfolio__project_name {
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.portfolio__project_card .portfolio__project_name_container {
+    display: flex;
+    align-items: center;
+}
+
+.portfolio__project_card .portfolio__project_name_container .portfolio__project_logo {
+    margin-right: 15px;
+}
+
+.portfolio__project_card .full-width {
+    width: 100%;
+}
+
+.portfolio__project_card .portfolio__project_description {
+    margin-top: 15px;
+}
+
+.contact .contact__title {
+    margin-bottom: 60px;
+}
+
+.contact .contact__content_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.contact .contact__content_wrapper .contact__content_right {
+    width: 35%;
 }
 
 .container__footer_item .description ul li {

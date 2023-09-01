@@ -20,8 +20,8 @@
         <a href="#home" class="header__navigation_item regular-text">home</a>
         <a href="#what" class="header__navigation_item regular-text">what we do</a>
         <a href="#why" class="header__navigation_item regular-text">why us</a>
-        <a href="" class="header__navigation_item regular-text">portfolio</a>
-        <a href="" class="header__navigation_item regular-text">contact us</a>
+        <a href="#portfolio" class="header__navigation_item regular-text">portfolio</a>
+        <a href="#contact" class="header__navigation_item regular-text">contact us</a>
       </nav>
     </header>
     <main class="main">
@@ -429,14 +429,75 @@
       </section>
 
       <section id="portfolio" class="portfolio">
-        <h2 class="anchor colored why__title">Our latest projects</h2>
+        <h2 class="anchor colored portfolio__title">Our latest projects</h2>
 
-        <div class="portfolio__left">
+        <div class="portfolio__content_wrapper">
+          <div class="portfolio__content_left">
+            <div class="portfolio__project_card">
+              <div class="portfolio__project_name_container">
+                <img class="portfolio__project_logo" src="assets/images/portfolio/napura_logo.webp" alt="">
+                <div class="full-width">
+                  <p class="portfolio__project_name full-width">Hair care brand</p>
+                  <a class="portfolio__project_name" href="https://napura.me/home" target="_blank">napura.me</a>
+                </div>
+              </div>
+              <p class="portfolio__project_description">
+                Short project desc with main points and results. Short project desc with main points and results.
+              </p>
+            </div>
+          </div>
 
+          <div class="portfolio__content_right">
+            <div class="portfolio__content_card_wrapper">
+              <img class="portfolio__content_card_img_card" src="assets/images/portfolio/card.webp" style="width: 120px;" alt="">
+              <img class="portfolio__content_card_img_platform" src="assets/images/portfolio/platform.webp" style="width: 220px;" alt="">
+            </div>
+            <div class="portfolio__content_card_wrapper">
+              <img class="portfolio__content_card_img_card" src="assets/images/portfolio/card.webp" style="width: 120px;" alt="">
+              <img class="portfolio__content_card_img_platform" src="assets/images/portfolio/platform.webp" style="width: 220px;" alt="">
+            </div>
+            <div class="portfolio__content_card_wrapper">
+              <img class="portfolio__content_card_img_card" src="assets/images/portfolio/card.webp" style="width: 120px;" alt="">
+              <img class="portfolio__content_card_img_platform" src="assets/images/portfolio/platform.webp" style="width: 220px;" alt="">
+            </div>
+            <div class="portfolio__content_card_wrapper">
+              <img class="portfolio__content_card_img_card" src="assets/images/portfolio/card.webp" style="width: 120px;" alt="">
+              <img class="portfolio__content_card_img_platform" src="assets/images/portfolio/platform.webp" style="width: 220px;" alt="">
+            </div>
+          </div>
         </div>
 
-        <div class="portfolio__right">
+      </section>
 
+      <section id="contact" class="contact">
+        <h2 class="anchor colored contact__title">Get free consultation</h2>
+
+        <div class="contact__content_wrapper">
+          <div class="contact__content_left">
+            <div class="contact__input-container">
+              <label for="email-input" class="contact__input_label">Email</label>
+              <input id="email-input" class="contact__input" type="text" placeholder=" ">
+            </div>
+            <div class="contact__input-container">
+              <label for="category" class="contact__select_label">Category</label>
+              <select id="category" class="contact__select">
+                <option value="development">Development</option>
+                <option value="design">Design</option>
+                <option value="Digital marketing">Digital marketing</option>
+              </select>
+            </div>
+            <button class="btn regular-text">
+              Send free consultation request
+            </button>
+            <p>OR</p>
+            <p>Feel free to set up any available time in our calendar and our manager will join the call</p>
+            <button class="btn regular-text">
+              calendar button
+            </button>
+          </div>
+          <div class="contact__content_right">
+            <img src="assets/images/contact-us/email_bg.png" style="width: 320px;" alt="">
+          </div>
         </div>
       </section>
         <br>
@@ -452,8 +513,8 @@
         <br>
 
         <div>
-            <img style="width: 250px" src="assets/images/protfolio/platform.webp" alt="">
-            <img style="width: 150px;" src="assets/images/protfolio/card.webp" alt="">
+            <img style="width: 250px" src="assets/images/portfolio/platform.webp" alt="">
+            <img style="width: 150px;" src="assets/images/portfolio/card.webp" alt="">
         </div>
         <br>
         <h1>Contact Us</h1>
