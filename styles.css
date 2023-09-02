@@ -217,8 +217,20 @@ h4 {
     padding-top: 100px;
     margin-top: -100px;
 } */
+section,
+.what__right_content {
+    opacity: 0;
+    padding-top: 50px;
+    transition: all 1s ease;
+}
 
-.home {
+section.visible,
+.what__right_content.visible {
+    opacity: 1;
+    padding-top: 0;
+}
+
+.home__content-wrapper {
     border-radius: 30px;
     background: linear-gradient(180deg, #040C1D 0%, rgba(4, 12, 29, 0.00) 100%);
     padding: 30px;
@@ -298,8 +310,7 @@ h4 {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    padding: 100px 0;
-
+    margin: 100px 0 60px;
 }
 
 .what__left {
