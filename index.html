@@ -473,23 +473,33 @@
 
         <div class="contact__content_wrapper">
           <div class="contact__content_left">
-            <div class="contact__input-container">
-              <label for="email-input" class="contact__input_label">Email</label>
-              <input id="email-input" class="contact__input" type="text" placeholder=" ">
+            <div class="contact__input-container input-gradient">
+              <input id="full-name-input" class="contact__input" type="text" placeholder=" ">
+              <label for="full-name-input" class="contact__input_label">Full name <span class="asterisk">*</span></label>
             </div>
-            <div class="contact__input-container">
-              <label for="category" class="contact__select_label">Category</label>
-              <select id="category" class="contact__select">
+            <div class="contact__input-container input-gradient">
+              <input id="email-input" class="contact__input" type="text" placeholder=" ">
+              <label for="email-input" class="contact__input_label">Email <span class="asterisk">*</span></label>
+            </div>
+            <div class="contact__input-container input-gradient">
+              <select id="category" class="contact__select"
+                      onclick="this.setAttribute('value', this.value);"
+                      onchange="this.setAttribute('value', this.value);"
+                      value="">
+                <option value=""></option>
                 <option value="development">Development</option>
                 <option value="design">Design</option>
                 <option value="Digital marketing">Digital marketing</option>
               </select>
+              <label for="category" class="contact__input_label">Category <span class="asterisk">*</span></label>
             </div>
             <button class="btn regular-text">
               Send free consultation request
             </button>
-            <p>OR</p>
-            <p>Feel free to set up any available time in our calendar and our manager will join the call</p>
+            <p class="contact__text">
+              <span class="bold">OR</span> <br>
+              Feel free to set up any available time in our <br> calendar and our manager will join the call
+            </p>
             <button class="btn regular-text">
               calendar button
             </button>
@@ -499,33 +509,34 @@
           </div>
         </div>
       </section>
-        <br>
-        
-        <!-- <br>
-
-        <img style="width: 170px" src="assets/images/why-us/full_service_solution.webp" alt="">
-        <img style="width: 170px" src="assets/images/why-us/team-of-experts.webp" alt="">
-        
-        
-        <br>
-        <h1>Portfolio</h1>
-        <br>
-
-        <div>
-            <img style="width: 250px" src="assets/images/portfolio/platform.webp" alt="">
-            <img style="width: 150px;" src="assets/images/portfolio/card.webp" alt="">
-        </div>
-        <br>
-        <h1>Contact Us</h1>
-        <br>
-
-        <img style="width: 400px" src="assets/images/what-we-do/mail.webp" alt=""> -->
-
-
-
-
-
     </main>
+    <footer>
+      <div class="footer__content_wrapper">
+        <section class="footer__section">
+          <p class="footer__logo">LOGO</p>
+          <h3><span class="colored">Grow</span> your business with <br> NAME</h3>
+        </section>
+
+        <section class="footer__section">
+          <p class="bold">Contact us</p>
+          <!--        todo: make tel: anchor -->
+          <p>+38096123123</p>
+          <!--        todo: make mailto: anchor -->
+          <p>contact@name.com</p>
+          <p>telegram link - probably better use link icons </p>
+          <p>discord link</p>
+        </section>
+
+        <section class="footer__section">
+          <p class="bold">Home</p>
+          <p class="bold">What we do</p>
+          <p class="bold">Why us</p>
+          <p class="bold">Portfolio</p>
+          <!--        <p class="bold">Blog</p>-->
+        </section>
+        <p class="footer__copyright">Copyright © 2023 NAME®. All rights reserved.</p>
+      </div>
+    </footer>
 	<script src="index.js"></script>
   </body>
 </html>
