@@ -69,7 +69,7 @@
           <div class="what__left_details regular-text">
             <span class="background-colored">Our mission</span> is to drive business growth through the art of digital organic marketing and web engineering.
           </div>
-          <button class="btn regular-text">
+          <button class="btn regular-text" onclick="openContactDialog()">
             Schedule a call
           </button>
         </div>
@@ -537,6 +537,50 @@
         <p class="footer__copyright">Copyright © 2023 NAME®. All rights reserved.</p>
       </div>
     </footer>
+
+    <div id="contact-overlay">
+<!--      <div id="overlay-backdrop"></div>-->
+      <div class="contact-overlay-content border-gradient">
+        <div class="contact__content_wrapper">
+          <div class="contact__content_left">
+            <div class="contact__input-container input-gradient">
+              <input id="full-name-input-dialog" class="contact__input" type="text" placeholder=" ">
+              <label for="full-name-input-dialog" class="contact__input_label">Full name <span class="asterisk">*</span></label>
+            </div>
+            <div class="contact__input-container input-gradient">
+              <input id="email-input-dialog" class="contact__input" type="text" placeholder=" ">
+              <label for="email-input-dialog" class="contact__input_label">Email <span class="asterisk">*</span></label>
+            </div>
+            <div class="contact__input-container input-gradient">
+              <select id="category-dialog" class="contact__select"
+                      onclick="this.setAttribute('value', this.value);"
+                      onchange="this.setAttribute('value', this.value);"
+                      value="">
+                <option value=""></option>
+                <option value="development">Development</option>
+                <option value="design">Design</option>
+                <option value="Digital marketing">Digital marketing</option>
+              </select>
+              <label for="category-dialog" class="contact__input_label">Category <span class="asterisk">*</span></label>
+            </div>
+            <button class="btn regular-text" onclick="closeContactDialog()">
+              Send free consultation request
+            </button>
+            <p class="contact__text">
+              <span class="bold">OR</span> <br>
+              Feel free to set up any available time in our <br> calendar and our manager will join the call
+            </p>
+            <button class="btn regular-text">
+              calendar button
+            </button>
+          </div>
+          <div class="contact__content_right">
+            <img src="assets/images/contact-us/email_bg.png" style="width: 320px;" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
 	<script src="index.js"></script>
   </body>
 </html>
