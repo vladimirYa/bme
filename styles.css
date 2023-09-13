@@ -71,7 +71,8 @@ html {
 }
 
 body {
-    background-color: #02060E; /*main black*/
+    background-color: #040c1d;
+    /*background-color: #02060E; !*main black*!*/
     /*max-width: 1220px;*/
     margin: 0 auto;
     /* position: relative; */
@@ -83,12 +84,12 @@ button {
 
 .btn {
     background-color: #F1916D;
-    border-radius: 1px;
     color: white;
     max-width: 300px;
-    padding: 20px;
     text-align: center;
     cursor: pointer;
+    border-radius: 6px;
+    padding: 10px 24px;
 }
 
 .regular-text {
@@ -185,7 +186,8 @@ h4 {
     position: sticky;
     top: 0;
     width: 100%;
-    background: #02060E;
+    /*background: #02060E;*/
+    background-color: #040c1d;
     z-index: 2;
 }
 
@@ -345,8 +347,6 @@ section.visible,
 .what__left .btn {
     align-self: center;
     width: 100%;
-    padding: 10px;
-    border-radius: 10px;
     margin-top: 40px;
 }
 
@@ -530,8 +530,20 @@ section.visible,
     margin-bottom: 60px;
 }
 .contact__content_wrapper .contact__content_left {
-    width: 45%;
+    max-width: 500px;
+    width: 100%;
 }
+
+.contact__input-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact__input-row .contact__input-container {
+    width: 230px;
+}
+
 .contact__content_wrapper .contact__content_right {
     width: 35%;
 }
@@ -541,7 +553,8 @@ section.visible,
     margin-bottom:20px;
 }
 .contact__input_label {
-    background-color: #02060e;
+    /*background-color: #02060e;*/
+    background-color: #040c1d;
     padding: 0 5px;
     color: white;
     font-size: 16px;
@@ -572,8 +585,8 @@ section.visible,
 
 .input-gradient {
     border: solid 1px transparent;
-    border-radius: 10px;
-    background-image: linear-gradient(#02060e, #02060e), linear-gradient(to right, #40CDCC, #8030CF80);
+    border-radius: 6px;
+    background-image: linear-gradient(#040c1d, #040c1d), linear-gradient(to right, #40CDCC, #8030CF80);
     background-origin: border-box;
     background-clip: content-box, border-box;
 }
@@ -600,8 +613,7 @@ select.contact__select::-ms-expand {
 .contact__content_left .btn {
     width: 100%;
     max-width: unset;
-    border-radius: 10px;
-    padding: 15px;
+    border-radius: 6px;
 }
 
 .contact__text {
@@ -700,13 +712,14 @@ footer .footer__copyright {
 
 #overlay-backdrop.shown {
     opacity: 1;
-    background-color: rgba(0,0,0,.58);
+    background-color: rgba(0,0,0,.9);
 }
 
 .contact-overlay-content {
     position: absolute;
     z-index: 1000;
-    width: 80%;
+    max-width: 80%;
+    width: 900px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
@@ -720,6 +733,10 @@ footer .footer__copyright {
 }
 .contact-overlay-content.border-gradient:before {
     border-radius: 8px;
+}
+
+.contact-overlay-content .contact__content_right {
+    width: 400px;
 }
 
 #contact-overlay.visible .contact-overlay-content{
