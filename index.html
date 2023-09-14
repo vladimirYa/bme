@@ -15,14 +15,16 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__logo">LOGO</div>
-      <nav class="header__navigation">
-        <a href="#home" class="header__navigation_item regular-text">home</a>
-        <a href="#what" class="header__navigation_item regular-text">what we do</a>
-        <a href="#why" class="header__navigation_item regular-text">why us</a>
-        <a href="#portfolio" class="header__navigation_item regular-text">portfolio</a>
-        <a href="#contact" class="header__navigation_item regular-text">contact us</a>
-      </nav>
+      <div class="header-content">
+        <div class="header__logo">LOGO</div>
+        <nav class="header__navigation">
+          <a href="#home" class="header__navigation_item regular-text">home</a>
+          <a href="#what" class="header__navigation_item regular-text">what we do</a>
+          <a href="#why" class="header__navigation_item regular-text">why us</a>
+          <a href="#portfolio" class="header__navigation_item regular-text">portfolio</a>
+          <a href="#contact" class="header__navigation_item regular-text">contact us</a>
+        </nav>
+      </div>
     </header>
     <main class="main">
 
@@ -50,7 +52,7 @@
                 Achive your business goals using latest technologies
               </li>
             </ul>
-            <button class="btn regular-text">
+            <button class="btn regular-text" onclick="openContactDialog()">
               Schedule free consultation
             </button>
           </div>
@@ -533,10 +535,10 @@
         </section>
 
         <section class="footer__section">
-          <p class="bold">Home</p>
-          <p class="bold">What we do</p>
-          <p class="bold">Why us</p>
-          <p class="bold">Portfolio</p>
+          <p class="bold"><a href="#home" class="regular-text">Home</a></p>
+          <p class="bold"><a href="#what" class="regular-text">What we do</a></p>
+          <p class="bold"><a href="#why" class="regular-text">Why us</a></p>
+          <p class="bold"><a href="#portfolio" class="regular-text">Portfolio</a></p>
           <!--        <p class="bold">Blog</p>-->
         </section>
         <p class="footer__copyright">Copyright © 2023 NAME®. All rights reserved.</p>

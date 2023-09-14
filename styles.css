@@ -71,7 +71,7 @@ html {
 }
 
 body {
-    background-color: #040c1d;
+    background-color: #020710;
     /*background-color: #02060E; !*main black*!*/
     /*max-width: 1220px;*/
     margin: 0 auto;
@@ -179,19 +179,23 @@ h4 {
 }
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 0;
     position: sticky;
     top: 0;
     width: 100%;
     /*background: #02060E;*/
-    background-color: #040c1d;
+    background-color: #020710;
     z-index: 2;
 }
 
-.header, .main {
+.header .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+    background-color: #020710;
+}
+
+.header .header-content, .main {
     margin: 0 auto;
     max-width: 1220px;
 }
@@ -231,11 +235,13 @@ section,
 .what__right_content {
     opacity: 0;
     transition: all 1s ease;
+    padding-top: 60px;
 }
 
 section.visible,
 .what__right_content.visible {
     opacity: 1;
+    padding-top: 0;
 }
 
 #home {
@@ -251,7 +257,7 @@ section.visible,
 
 .home__content-wrapper {
     border-radius: 30px;
-    background: linear-gradient(180deg, #040C1D 0%, rgba(4, 12, 29, 0.00) 100%);
+    background: linear-gradient(180deg, #020710 0%, rgba(4, 12, 29, 0.00) 100%);
     padding: 60px 50px;
     display: flex;
     align-items: flex-start;
@@ -331,7 +337,7 @@ section.visible,
 
 .why__item {
     border-radius: 30px;
-    background: linear-gradient(180deg, #040C1D 0%, rgba(4, 12, 29, 0.00) 100%);
+    background: linear-gradient(180deg, #020710 0%, rgba(4, 12, 29, 0.00) 100%);
     max-width: 250px;
     display: flex;
     align-items: center;
@@ -583,7 +589,7 @@ section.visible,
 }
 .contact__input_label {
     /*background-color: #02060e;*/
-    background-color: #040c1d;
+    background-color: #020710;
     padding: 0 5px;
     color: white;
     font-size: 16px;
@@ -615,7 +621,7 @@ section.visible,
 .input-gradient {
     border: solid 1px transparent;
     border-radius: 6px;
-    background-image: linear-gradient(#040c1d, #040c1d), linear-gradient(to right, #40CDCC, #8030CF80);
+    background-image: linear-gradient(#020710, #020710), linear-gradient(to right, #40CDCC, #8030CF80);
     background-origin: border-box;
     background-clip: content-box, border-box;
 }
@@ -696,6 +702,9 @@ footer .footer__content_wrapper {
 footer .footer__section {
     opacity: 1;
     padding: 40px 0;
+}
+footer a {
+    text-decoration: none;
 }
 footer p,
 footer h3 {
