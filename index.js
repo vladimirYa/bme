@@ -9,7 +9,7 @@ function handleIntersection(entries) {
 }
 
 const observer = new IntersectionObserver(handleIntersection);
-document.querySelectorAll('.animated').forEach(section => observer.observe(section));
+document.querySelectorAll('.animated').forEach(animatedEl => observer.observe(animatedEl));
 
 
 function openContactDialog() {
