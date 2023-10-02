@@ -2,6 +2,14 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+root {
+    --text-color: '';
+    --background-color: '';
+    --button-background-color: '';
+    --button-color: '';
+    --gradient: '';
+    --highlight-color: '';
+}
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -71,7 +79,7 @@ html {
 }
 
 body {
-    background-color: #020710;
+    background-color: var(--background-color);
     /*background-color: #02060E; !*main black*!*/
     /*max-width: 1220px;*/
     margin: 0 auto;
@@ -83,8 +91,8 @@ button {
 }
 
 .btn {
-    background-color: #F1916D;
-    color: white;
+    background-color: var(--button-background-color);
+    color: var(--button-color);
     max-width: 300px;
     text-align: center;
     cursor: pointer;
@@ -92,8 +100,12 @@ button {
     padding: 10px 24px;
 }
 
+.btn.regular-text {
+    color: var(--button-color);
+}
+
 .regular-text {
-    color: #FFF;
+    color: var(--text-color);
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -106,7 +118,7 @@ h1 {
     font-family: sans-serif;
     line-height: 1.4;
     font-weight: 800;
-    color: white;
+    color: var(--text-color);
 }
 
 h2 {
@@ -126,7 +138,7 @@ h3 {
 }
 
 h4 {
-    color: #FFF;
+    color: var(--text-color);
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
@@ -134,11 +146,11 @@ h4 {
 }
 
 .white {
-    color: #fff;
+    color: var(--text-color);
 }
 
 .background-colored {
-    background-color: #5d79c8;
+    background-color: var(--highlight-color);
 }
 
 .blue {
@@ -152,9 +164,9 @@ h4 {
 .colored {
     display: inline-block;
     background: #40CDCC;
-    background: -webkit-linear-gradient(to right, #40CDCC 0%, #723FC5 100%);
-    background: -moz-linear-gradient(to right, #40CDCC 0%, #723FC5 100%);
-    background: linear-gradient(to right, #40CDCC 0%, #723FC5 100%);
+    background: -webkit-linear-gradient(var(--gradient));
+    background: -moz-linear-gradient(var(--gradient));
+    background: linear-gradient(var(--gradient));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -169,7 +181,7 @@ h4 {
     inset: 0;
     border-radius: 30px;
     padding: 1px;
-    background: linear-gradient(to right, #40CDCC, #8030CF80);
+    background: linear-gradient(var(--gradient));
     -webkit-mask: 
         linear-gradient(#fff 0 0) content-box, 
         linear-gradient(#fff 0 0);
@@ -183,7 +195,7 @@ h4 {
     top: 0;
     width: 100%;
     /*background: #02060E;*/
-    background-color: #020710;
+    background-color: var(--background-color);
     z-index: 2;
 }
 
@@ -192,7 +204,7 @@ h4 {
     justify-content: space-between;
     align-items: center;
     padding: 30px 0;
-    background-color: #020710;
+    background-color: var(--background-color);
 }
 
 .header .header-content, .main {
@@ -201,7 +213,7 @@ h4 {
 }
 
 .header__logo {
-    color: #FFF;
+    color: var(--text-color);
     text-align: center;
     font-size: 30px;
     font-style: normal;
@@ -266,7 +278,7 @@ section.visible,
 
 .home__content-wrapper {
     border-radius: 30px;
-    background: linear-gradient(180deg, #020710 0%, rgba(4, 12, 29, 0.00) 100%);
+    background: linear-gradient(180deg, var(--background-color) 0%, rgba(4, 12, 29, 0.00) 100%);
     padding: 60px 50px;
     display: flex;
     align-items: flex-start;
@@ -361,7 +373,7 @@ section.visible,
 
 .why__item {
     border-radius: 30px;
-    background: linear-gradient(180deg, #020710 0%, rgba(4, 12, 29, 0.00) 100%);
+    background: linear-gradient(180deg, var(--background-color) 0%, rgba(4, 12, 29, 0.00) 100%);
     max-width: 250px;
     display: flex;
     align-items: center;
@@ -612,9 +624,9 @@ section.visible,
 }
 .contact__input_label {
     /*background-color: #02060e;*/
-    background-color: #020710;
+    background-color: var(--background-color);
     padding: 0 5px;
-    color: white;
+    color: var(--text-color);
     font-size: 16px;
     position: absolute;
     pointer-events: none;
@@ -628,7 +640,7 @@ section.visible,
     background-color: transparent;
     border: none;
     outline: none;
-    color: white;
+    color: var(--text-color);
     font-size: 16px;
     display: block;
     height: 50px;
@@ -675,7 +687,7 @@ select.contact__select::-ms-expand {
 }
 
 .contact__text {
-    color: white;
+    color: var(--text-color);
     text-align: center;
     margin: 25px auto;
     font-size: 20px;
@@ -731,7 +743,7 @@ footer a {
 }
 footer p,
 footer h3 {
-    color: white;
+    color: var(--text-color);
 }
 footer p {
     line-height: 32px;
